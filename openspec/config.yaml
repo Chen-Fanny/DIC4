@@ -1,0 +1,23 @@
+schema: spec-driven
+
+context: |
+  Target venue: ICEIB 2027 (7th IEEE International Conference on Electronic Communications,
+  Internet of Things and Big Data, https://www.iceib.asia/), standard two-column IEEEtran
+  conference format in English (4 to 8 pages).
+  Source system: Food Guardian repository (./Food-Guardian).
+  Writing style reference: 36-marker A-to-Z (A2Z) academic SOP stored in ./ref/A2Z_academic_writing_style.md.
+  Required top-level sections in ICEIB paper/main.tex:
+    Abstract, Introduction, Related Work, Proposed Design, Experiment, Conclusion, References.
+  Strict grounding rule: Only report implemented features, code paths, schemas, formulas,
+  and evaluation results directly observed in ./Food-Guardian. Never fabricate metrics.
+
+rules:
+  proposal:
+    - State the target venue (ICEIB 2027), IEEEtran format, and A-to-Z SOP alignment.
+    - Keep proposals concise and explicitly note out-of-scope claims (no fabricated metrics).
+  specs:
+    - Define verifiable structural and factual requirements for each paper section and A-Z marker.
+  design:
+    - Map each A-Z marker (A-F, G-L, M-O, PA-PM, Q-V, W-Z) to exact LaTeX sections and Food-Guardian sources.
+  tasks:
+    - Break manuscript writing and verification into discrete, auditable checklist items.

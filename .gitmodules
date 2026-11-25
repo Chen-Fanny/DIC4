@@ -1,0 +1,3 @@
+[submodule "Food-Guardian"]
+	path = Food-Guardian
+	url = https://github.com/Chen-Fanny/Food-Guardian.git
